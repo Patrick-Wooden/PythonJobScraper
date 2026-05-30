@@ -15,13 +15,13 @@ This is a simple web scraper that collects job listings from the [Fake Python Jo
 - pandas
 
 # Installation
-    ```bash
+```bash
     pip install requests beautifulsoup4 pandas
-    ```
+```
 # Usage
 
-    Simply run the script:
-    ```bash
-    python main.py
-    ```
-    The scraped job postings will then be saved to  `data/job_postings.csv`
+Simply run the script:
+```bash
+python main.py
+```
+The scraped job postings will then be saved to  `data/job_postings.csv`
