@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-
+import os
 
 
 
@@ -42,9 +42,11 @@ def main():
     results = scrape_jobs(url)    
     print(f"Scraped {len(results)} job postings")
 
+    #Make sure the data folder exists and if not make it
+    os.makedirs("data", exist_ok=True)
     #Convert results into CSV file
     df = pd.DataFrame(results)
-    df.to_csv("job_postings.csv", index=False)
+    df.to_csv("data/job_postings.csv", index=False)
     
     print("Saved job_postings.csv")
     
