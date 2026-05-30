@@ -16,7 +16,7 @@ This is a simple web scraper that collects job listings from the [Fake Python Jo
 
 # Installation
 ```bash
-    pip install requests beautifulsoup4 pandas
+pip install requests beautifulsoup4 pandas
 ```
 # Usage
 
